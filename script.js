@@ -2,6 +2,13 @@ let ultimoElemento;
 
 const rngInteger = (min, max) => Math.floor(Math.random() * max + min);
 const rngColor = () => `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%, 10%)`;
+// Get the modal
+let modal = document.getElementById("myModal");
+const cross_span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+cross_span.onclick = function() {
+  modal.style.display = "none";
+}
 
 const observador = new IntersectionObserver(
 	(entradas) => {
@@ -25,10 +32,25 @@ function createNewElement() {
                             <img src="/artworks/${rngInteger(
 																													1,
 																													159
-																												)}.PNG">
+																												)}.PNG" onclick="zoomElement(this.src)">
                           </div>`;
 	return elem;
 }
+
+function zoomElement(img_src){
+	console.log(img_src);
+	let img = document.getElementById("myImg");
+	let modalImg = document.getElementById("img01");
+	let captionText = document.getElementById("caption");
+	modal.style.display = "block";
+	let img_src_zoom = img_src.replace("/artworks/","/originals/")
+	modalImg.src = img_src;
+
+	if (img_src.includes("/16.PNG")){
+		captionText.innerHTML = "You just found an Easter egg, for more, visit: https://escape-china.com/chn";
+	} 
+}
+
 
 (function () {
 	const masonry = document.getElementById("masonry");
