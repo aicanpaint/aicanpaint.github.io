@@ -3,7 +3,7 @@ let ultimoElemento;
 
 // Funciones genericas
 const rngInteger = (min, max) => Math.floor(Math.random() * max + min);
-const rngColor = () => `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%)`;
+const rngColor = () => `hsl(${Math.floor(Math.random() * 360)}, 100%, 50%, 10%)`;
 
 // Obj Observador
 const observador = new IntersectionObserver(
