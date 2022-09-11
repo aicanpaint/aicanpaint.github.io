@@ -92,14 +92,16 @@ img {
   top: 15px;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 5em;
   font-weight: bold;
   transition: 0.3s;
+  z-index: 9999;
 }
 
 .close:hover,
 .close:focus {
   color: #bbb;
+  font-size: 6em;
   text-decoration: none;
   cursor: pointer;
 }
