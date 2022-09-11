@@ -26,10 +26,10 @@ function createNewElement() {
 	elem.style.height = `${height}px`;
 	elem.className = "grid-item my-3 col-xl-4 col-md-6 col-sm-12 ";
 	elem.innerHTML = `<div class="rounded overflow-hidden box-img" style="height: 100%; background-color: ${rngColor()};">
-                            <img src="https://aicanpaint.com/artworks/${rngInteger(
+                            <img src="/artworks/${rngInteger(
 																													1,
-																													200
-																												)}">
+																													20
+																												)}.PNG">
                           </div>`;
 	return elem;
 }
