@@ -38,7 +38,6 @@ function createNewElement() {
 }
 
 function zoomElement(img_src){
-	console.log(img_src);
 	let img = document.getElementById("myImg");
 	let modalImg = document.getElementById("img01");
 	let captionText = document.getElementById("caption");
