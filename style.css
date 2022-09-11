@@ -1,0 +1,32 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---- grid ---- */
+.grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+.grid-item {
+  float: left;
+  overflow: hidden;
+}
+
+/* Custom */
+.box-img img {
+  filter: brightness(65%);
+  transition: 0.1s ease;
+}
+
+.box-img:hover img {
+  filter: brightness(100%);
+}
