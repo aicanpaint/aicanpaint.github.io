@@ -24,7 +24,7 @@ function createNewElement() {
 	elem.innerHTML = `<div class="rounded overflow-hidden box-img" style="height: 100%; background-color: ${rngColor()};">
                             <img src="/artworks/${rngInteger(
 																													1,
-																													104
+																													115
 																												)}.PNG">
                           </div>`;
 	return elem;
