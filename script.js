@@ -43,7 +43,7 @@ function zoomElement(img_src){
 	let captionText = document.getElementById("caption");
 	modal.style.display = "block";
 	let img_src_zoom = img_src.replace("/artworks/","/originals/")
-	modalImg.src = img_src;
+	modalImg.src = img_src_zoom;
 
 	if (img_src.includes("/16.PNG")){
 		captionText.innerHTML = "You just found an Easter egg, for more, visit: https://escape-china.com/chn";
