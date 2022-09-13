@@ -31,7 +31,7 @@ function createNewElement() {
 	elem.innerHTML = `<div class="rounded overflow-hidden box-img" style="height: 100%; background-color: ${rngColor()};">
                             <img onclick="zoomElement(this.src)" src="/artworks/${rngInteger(
 																													1,
-																													163
+																													191
 																												)}.PNG">
                           </div>`;
 	return elem;
